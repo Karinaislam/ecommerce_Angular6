@@ -1,0 +1,13 @@
+
+
+<div class="product">
+  <div  *ngFor= "let product of productArr">
+    <app-product-item [productData]="product" (addProduct) ="addItem($event)"></app-product-item>
+  </div>
+</div>
+  
+  
+  <app-order-summary class="order_container" [cartArr]="cart"></app-order-summary>
+
+
+

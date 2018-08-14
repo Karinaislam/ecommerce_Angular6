@@ -1,0 +1,12 @@
+<h4>Order Summary</h4>
+<div class="order" *ngIf ="cartArr.length" >
+    <div class="productName" *ngFor="let item of cartArr">
+        {{item.name}}
+        <div class="price">{{item.price}}</div>
+        <hr>
+    </div>
+    <p class="total" >Total:  {{total}}</p>
+</div>
+
+
+<button (click)=" showOrder()">show my order</button>
